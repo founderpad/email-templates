@@ -18,8 +18,11 @@
                     background-color: #2BA4C9;
                     padding: 8px 16px;
                     border-radius: 5px;
-                    color: white;
+                    color: white !important;
                     font-size: 14px;
+                }
+                a:visited {
+                    color: white;
                 }
                 a:hover {
                     background-color: #2092BC;
@@ -39,10 +42,10 @@
                     display: flex;
                     flex: 1;
                     margin: 32px auto;
-                    background-color: white;
                 }
                 #inner-container {
-                    background-color: #F7FAFC;;
+                    background-color: #F7FAFC;
+                    border-radius: 20px;
                     display: flex;
                     flex: 1;
                     margin: 32px auto;
@@ -82,13 +85,13 @@
 								<td>
                                     <b>Please verify your email</b>
 									<br/><br/>
-									To get started, please verify your email by clicking the button below.
+									To get started, before you can log in please verify your email by clicking the button below.
 								</td>
 							</tr>
                             <tr></tr>
 							<tr>
 								<td>
-									<a href="${serverUrl}/verify?&ticket=${ticket}&type=emailVerify&redirectTo=${redirectTo}" style="color: white;">
+									<a href="${serverUrl}/verify?&ticket=${ticket}&type=emailVerify&redirectTo=${redirectTo}" style="color: white;" >
         								Verify email
       								</a>
 								</td>
@@ -96,7 +99,7 @@
                             <tr></tr>
 							<tr>
 								<td>
-									Many thanks,<br/><br/>
+									Many thanks,<br/>
 									<strong>The founderpad team</strong>
 								</td>
 							</tr>
