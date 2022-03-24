@@ -82,6 +82,12 @@
                 .socials a {
                     margin-right: 8px;
                 }
+                .verify-email {
+                    background-color: #2BA4C9;
+                    border-radius: 8px;
+                    color: white;
+                    padding: 8px 32px;
+                }
             </style>
         </head>
 	</head>
@@ -100,10 +106,8 @@
                             </td>
                             <tr></tr>
 							<tr>
-								<td>
-                                    <form>
-                                        <button formaction="${serverUrl}/verify?&ticket=${ticket}&type=emailVerify&redirectTo=${redirectTo}">Verify email</button>
-                                    </form>
+								<td align="center">
+                                    <a class="verify-email" href="${serverUrl}/verify?&ticket=${ticket}&type=emailVerify&redirectTo=${redirectTo}">Verify email</a>
 								</td>
 							</tr>
                             <tr></tr>
